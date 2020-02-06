@@ -1,31 +1,28 @@
 {
   "name": "multi-ini",
-  "version": "2.0.0",
+  "version": "2.0.1",
   "license": "MIT",
   "description": "An ini-file parser which supports multi line, multiple levels and arrays to get a maximum of compatibility with Zend config files.",
   "main": "lib/index.js",
   "scripts": {
-    "predistribute": "babel src --out-dir lib",
-    "test": "babel-node ./node_modules/.bin/_mocha",
-    "coverage": "babel-node ./node_modules/.bin/istanbul cover _mocha",
-    "distribute": "npm publish"
+    "postinstall": "babel src --out-dir lib"
   },
-  "homepage": "https://github.com/evangelion1204/multi-ini",
+  "homepage": "https://github.com//ni-do/multi-ini",
   "author": {
-    "name": "Michael Iwersen",
-    "email": "mi.iwersen@gmail.com"
+    "name": "Niklas Donath",
+    "email": "niklas.donath@web.de"
   },
   "repository": {
     "type": "git",
-    "url": "git://github.com/evangelion1204/multi-ini.git"
+    "url": "git://github.com//ni-do/multi-ini.git"
   },
   "bugs": {
-    "url": "https://github.com/evangelion1204/multi-ini/issues"
+    "url": "https://github.com//ni-do/multi-ini/issues"
   },
   "licenses": [
     {
       "type": "MIT",
-      "url": "https://github.com/evangelion1204/multi-ini/blob/master/LICENSE"
+      "url": "https://github.com//ni-do/multi-ini/blob/master/LICENSE"
     }
   ],
   "keywords": [
