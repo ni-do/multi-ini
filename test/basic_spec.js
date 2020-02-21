@@ -160,6 +160,17 @@ describe("Basic testing includes reading of different files", function () {
         expect(data['section2']['key6']['subkey'].length).to.equal(2);
         expect(data['section2']['key6']['subkey'][0]).to.equal('valueX');
         expect(data['section2']['key6']['subkey'][1]).to.equal('valueY');
+
+        expect(data['section1']['key6']['myarray'].length).to.equal(3);
+        expect(data['section1']['key6']['myarray'][0]).to.equal('myval1');
+        expect(data['section1']['key6']['myarray'][1]).to.equal('myval2');
+        expect(data['section1']['key6']['myarray'][2]).to.equal('myval3');
+
+        expect(data['section2']['key6']['myarray'].length).to.equal(4);
+        expect(data['section2']['key6']['myarray'][0]).to.equal('myval1');
+        expect(data['section2']['key6']['myarray'][1]).to.equal('overwritten myval2');
+        expect(data['section2']['key6']['myarray'][2]).to.equal('myval3');
+        expect(data['section2']['key6']['myarray'][3]).to.equal('myval4');
     })
 
     it("Write ini file with one section and multiple single line values", function () {
